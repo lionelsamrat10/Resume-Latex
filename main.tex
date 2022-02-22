@@ -1,0 +1,291 @@
+%-------------------------
+% Resume in Latex
+% Author : Abey George
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{graphicx}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{fontawesome}
+\usepackage{tikz}
+\usetikzlibrary{svg.path}
+
+
+\definecolor{cvblue}{HTML}{0E5484}
+\definecolor{black}{HTML}{130810}
+\definecolor{darkcolor}{HTML}{0F4539}
+\definecolor{cvgreen}{HTML}{3BD80D}
+\definecolor{taggreen}{HTML}{00E278}
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\colorlet{name}{black}
+\colorlet{tagline}{darkcolor}
+\colorlet{heading}{darkcolor}
+\colorlet{headingrule}{cvblue}
+\colorlet{accent}{darkcolor}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+% \pagestyle{fancy}
+% \fancyhf{}  % clear all header and footer fields
+% \fancyfoot{}
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\large#1} & \textbf{\small #2} \\
+      \textit{\large#3} & \textit{\small #4} \\
+      
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\newcommand\sbullet[1][.5]{\mathbin{\vcenter{\hbox{\scalebox{#1}{$\bullet$}}}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+
+\begin{center}
+    {\Huge \scshape Samrat Mitra} \\ \vspace{1pt}
+    Jalpaiguri, West Bengal \\ \vspace{1pt}
+    \small \href{tel:+919830663882}{ \raisebox{-0.1\height}\faPhone\ \underline{+91-9830663882} ~} \href{mailto:samratmitra338@gmail.com}{\raisebox{-0.2\height}\faEnvelope\  \underline{samratmitra338@gmail.com}} ~ 
+    \href{https://linkedin.com/in/samrat-mitra-5178a2151}{\raisebox{-0.2\height}\faLinkedinSquare\ \underline{samrat-mitra}}  ~
+    \href{https://github.com/lionelsamrat10}{\raisebox{-0.2\height}\faGithub\ \underline{lionelsamrat10}} ~
+    \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jalpaiguri Government Engineering College}{08/2017 -- 08/2021}
+      {Bachelor of Technology in Information Technology - \textbf{CGPA} - \textbf{9.3}}{Jalpaiguri, West Bengal}
+  \resumeSubHeadingListEnd
+  
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Jalpaiguri Zilla School}{01/2007 -- 05/2017}
+      {Higher Secondary in Science  - \textbf{Percentage} - \textbf{88.2\%}}{Jalpaiguri, West Bengal}
+  \resumeSubHeadingListEnd
+%
+
+%-----------EXPERIENCE-----------
+\section{WORK EXPERIENCE}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Cognizant}{08/2021 -- Present} 
+      {\underline{Programmer Analyst Trainee}}{Chennai, Tamil Nadu}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Working for an \textbf{Asset Management Client} based out of the \textbf{United States}. Using \textbf{Spring Boot and Webservices for the application, also Oracle SQL as database, Hibernate as ORM Tool}. Also performing User Acceptance Testing (UAT) for various releases of the application.}}
+  
+      \resumeItemListEnd  
+      \resumeItemListStart
+        \resumeItem{\normalsize{Received \textbf{AWS Certified Cloud Practitioner Certification}} as part of the Training curriculum.}
+        `\href{https://www.credly.com/badges/e8c12dff-2690-48e9-9819-4525513ac063?source=linked_in_profile}{\underline{\textbf{AWS CCP Certificate}}}
+      \resumeItemListEnd 
+      \resumeSubheading
+      {Cognizant}{01/2021 -- 06/2021} 
+      {\underline{Software Engineer Intern}}{Kolkata, West Bengal}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Trained in \textbf{JAVA Full Stack Development.}} Worked on building basic applications, based on business requirements. Worked on building a \textbf{Retail banking management system} as final project, where used Spring Boot backend, MySQL as database, AWS For deployment and used JSP For building the UI. The application is a microservices based one.}
+        \href{https://drive.google.com/file/d/1kSY_gL8BE02AY3EVDVjQwA0qxwW_bSJX/view}{\underline{\textbf{Internship certificate}}}
+      \resumeItemListEnd 
+       \resumeSubheading
+      {Indian Institute of Engineering Science and Technology}{06/2019 -- 08/2019} 
+      {\underline{Research Intern}}{Shibpur, West Bengal}
+      \resumeItemListStart
+        \resumeItem{\normalsize{Worked on a paper, where we have reviewed the available algorithms for the prevention of Man In The Middle Attack, that happens in the Diffie Hellman Key Exchange Algorithm}}
+        \href{https://drive.google.com/file/d/1744sYixzitAhQLsmrn3LuZjWLqL3UKYq/view}{\underline{\textbf{Internship certificate}}}
+        \resumeItemListEnd 
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {\href{https://github.com/lionelsamrat10/Retail-Banking-Management-System}{\textbf{\large{\underline{Retail Banking Management System}}} \href{https://github.com/lionelsamrat10/Retail-Banking-Management-System}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{\textbf{[Java, Spring Boot, AWS, MySQL]}}}}{}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Developed this full stack web application using Java, where implemented different banking operations, like creating customers, creating accounts, deposit, withdraw and transfer money etc.}}
+            \resumeItem{\normalsize{\textbf{Developed the application using Microservices}, communicating within each others. Also all the modules were \textbf{unit tested using JUnit.}}}
+            \resumeItem{\normalsize{\textbf{Deployed the application on AWS ECS cluster using AWS Codepipeline for CI/CD.}}}
+
+            \resumeItem{\textcolor{accent} {\href{https://github.com/lionelsamrat10/Retail-Banking-Management-System} {\underline{\normalsize{Github Link}}}}}
+          \resumeItemListEnd 
+          \vspace{-13pt}
+          
+      \resumeProjectHeading
+          {\href{https://deploy-app-st-sam.herokuapp.com/}{\textbf{\large{\underline{Classification Visualization}}} \href{https://deploy-app-st-sam.herokuapp.com/}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{\textbf{Python, Streamlit}}}}{}
+          \resumeItemListStart
+            \resumeItem{\normalsize{This is a web application, where the user can select a dataset and can apply different Classification algorithms like \textbf{KNN, SVM, Random Forest} etc. and the accuracy of that algorithm on that dataset is shown on the web application.}}
+            \resumeItem{\normalsize{Used classic datasets from UCI Machine learning repository like the \textbf{Wine Dataset, Iris Dataset and Breast Cancer Dataset}.}}
+            \resumeItem{\textcolor{accent} {\href{https://deploy-app-st-sam.herokuapp.com/} {\underline{\normalsize{Live Demo}}}}}
+          \resumeItemListEnd
+          \vspace{-13pt}
+          
+          \resumeProjectHeading
+          {\href{https://sandp500-stock-data.herokuapp.com/}{\textbf{\large{\underline{SAndP500 Stock Price Explorer}}} \href{https://sandp500-stock-data.herokuapp.com/}{\raisebox{-0.1\height}\faExternalLink }} $|$ \large{\underline{\textbf{Python, streamlit}}}}{}
+          \resumeItemListStart
+            \resumeItem{\normalsize{Web scraped SAndP500 Data from Wikipedia using Pandas and performed Exploratory Data Analysis on the data. Then used Yahoo Finance to get the related stock data and displayed them in the form of charts.}}
+            \resumeItem{\textcolor{accent} {\href{https://sandp500-stock-data.herokuapp.com/} {\underline{\normalsize{Live demo}}}}}
+          \resumeItemListEnd 
+          
+    \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%
+
+%-----------PROGRAMMING SKILLS-----------
+\section{TECHNICAL SKILLS}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{\normalsize{Languages:}}{ \normalsize{Java, C, Python(Basic)}} \\
+     \textbf{\normalsize{Database:}}{ \normalsize{MySQL}} \\
+     \textbf{\normalsize{Web development:}}{ \normalsize{Spring Framework, Microservices}} \\
+     \textbf{\normalsize{Developer Tools:}}{ \normalsize{VS Code, PyCharm, Jupyter, Eclipse}} \\
+     \textbf{\normalsize{Others:}}{ \normalsize{AWS, Git, Object Oriented Programming}} \\
+    }}
+ \end{itemize}
+ \vspace{-15pt}
+ 
+ %-----------CERTIFICATIONS---------------
+\section{CERTIFICATIONS}
+    \resumeSubHeadingListStart
+            \resumeItemListStart
+                \resumeItem{\normalsize{\textbf{AWS Certified Cloud Practitioner}. \href{https://www.credly.com/badges/e8c12dff-2690-48e9-9819-4525513ac063?source=linked_in_profile}{\raisebox{-0.1\height}\faExternalLink }}}
+                
+                \resumeItem{\normalsize{\textbf{EFSET English Certificate 79/100 (C2 Proficient)}. \href{https://www.efset.org/cert/6JyZKL}{\raisebox{-0.1\height}\faExternalLink }}}
+                
+                \resumeItem{\normalsize{\textbf{Cognizant Certified Full Stack Engineer}. \href{https://drive.google.com/drive/my-drive}{\raisebox{-0.1\height}\faExternalLink }}}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ \vspace{-11pt}
+
+ %-----------ACHIEVEMENTS---------------
+\section{ACHIEVEMENTS AND RESPONSIBILITIES}
+    \resumeSubHeadingListStart
+            \resumeItemListStart
+                \resumeItem{\normalsize{Contributed to some projects during \textbf{Hacktoberfest 2k21}, the biggest Open Source Event.}}
+                \resumeItem{\normalsize{One of the top contributors during my internship at Cognizant.}}
+                \resumeItem{\normalsize{Community member of various Open Source Organizations like: \textbf{EddieHub, Cloud Community} etc.}}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ \vspace{-11pt}
+
+%------------INTERESTS------------------
+\section{INTERESTS}
+    \resumeSubHeadingListStart
+            \resumeItemListStart
+                \resumeItem{\normalsize{Data Science/Data Analysis.}}
+                \resumeItem{\normalsize{Cloud Computing.}}
+                \resumeItem{\normalsize{DevOps.}}
+            \resumeItemListEnd
+    \resumeSubHeadingListEnd
+ \vspace{-11pt}
+
+\end{document}
